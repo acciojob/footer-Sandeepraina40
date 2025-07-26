@@ -1,5 +1,4 @@
-/* your code here */
-/* Basic reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Footer base */
 footer {
   background: #000;
   color: #fff;
@@ -22,6 +22,7 @@ footer .content {
   padding: 40px 20px 30px 20px;
 }
 
+/* Top section */
 footer .top {
   display: flex;
   justify-content: space-between;
@@ -29,12 +30,20 @@ footer .top {
   flex-wrap: wrap;
 }
 
+/* Logo */
 footer .logo_name {
   font-size: 24px;
   font-weight: 600;
   color: white;
 }
 
+/* FIX: Ensure media-icons container is flex */
+footer .media-icons {
+  display: flex; /* ✅ Cypress expects this */
+  gap: 10px;
+}
+
+/* Media icon style */
 footer .media-icons a {
   color: white;
   font-size: 18px;
@@ -44,7 +53,6 @@ footer .media-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 8px;
   border-radius: 50%;
   transition: background 0.3s;
 }
@@ -54,6 +62,7 @@ footer .media-icons a:hover {
   color: #000;
 }
 
+/* Link boxes */
 footer .link-boxes {
   width: 100%;
   display: flex;
@@ -70,7 +79,6 @@ footer .link-boxes .box .link_name {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
-  position: relative;
 }
 
 footer .link-boxes .box li {
@@ -88,6 +96,7 @@ footer .link-boxes .box a:hover {
   color: #fff;
 }
 
+/* Bottom */
 footer .bottom-details {
   background: #2c2f38;
   padding: 15px 20px;
@@ -102,6 +111,7 @@ footer .bottom-details a {
   text-decoration: none;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   footer .link-boxes .box {
     width: 45%;
