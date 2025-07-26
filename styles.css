@@ -1,1 +1,127 @@
 /* your code here */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  width: 100%;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 20px 30px 20px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .logo_name {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+footer .media-icons a {
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  background: #222;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+footer .media-icons a:hover {
+  background: #fff;
+  color: #000;
+}
+
+footer .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+footer .link-boxes .box {
+  width: 20%;
+}
+
+footer .link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+footer .link-boxes .box li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+footer .link-boxes .box a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+footer .link-boxes .box a:hover {
+  color: #fff;
+}
+
+footer .bottom-details {
+  background: #2c2f38;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+footer .bottom-details a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  footer .link-boxes .box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .link-boxes .box {
+    width: 100%;
+  }
+
+  footer .bottom-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
